@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS</title>
+    <link rel="icon" type="image" href="./img/profile.jpg">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+    <!-- header+nav -->
+    <div class="fixed-top">
+        <nav class="container-fluid navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">
+                <img src="./img/profile.jpg" alt="Avatar Logo" style="width:40px;" class="rounded-pill">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item nav-item-css">
+                        <a class="nav-link" aria-current="page" href=""><i class="fas fa-home"></i>
+                            Home</a>
+                    </li>
+                    <li class="nav-item nav-item-css">
+                        <a class="nav-link" href=""><i class="bi bi-book"></i>
+                            About Us</a>
+                    </li>
+                    <li class="nav-item dropdown nav-item-css">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-menu-down"></i>
+                            Category
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="">Converter</a></li>
+                            <li><a class="dropdown-item" href="">Calculator</a></li>
+                            <li><a class="dropdown-item" href="">Christmas Tree</a></li>
+                            <li><a class="dropdown-item" href="">Paper,Rock,Scissors</a></li>
+                            <li><a class="dropdown-item" href="">To Be Follow</a></li>
+                        </ul>
+
+                    </li>
+                    <li class="nav-item nav-item-css">
+                        <a class="nav-link" href=""><i class="bi bi-telephone-forward"></i> Contact Us</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+
+                        <a class="nav-link nav-item-css" href=""><i class="fas fa-user"></i>
+                            Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-item-css active" href=""><i class="fas fa-lock"></i> Login</a>
+                    </li><span>
+                        <form class="d-flex">
+                            <input class="form-control me-1 ms-2" style="width:180px;" type="search"
+                                placeholder="Search" aria-label="Search">
+                            <button class="btn btn-primary" type="submit">Search <i class="bi bi-search"></i></button>
+                        </form>
+                    </span>
+                </ul>
+
+            </div>
+        </nav>
+    </div>
+    <div class="container-fluid">
+        <div class="py-5 mt-5">
+            <div class="container">
+                <h1 class="h1">
+                    ROCK,PAPER AND SCISSORS
+                </h1>
+                <div class="text-center">
+                    <p1 class="text-light text-center container">"Welcome to Play RPS! This is a simple game of Rock,
+                        Paper, Scissors where you get to battle with your computer. There are 10 rounds in total, the
+                        one who gets the most points in the end wins the game ! "
+                    </p1>
+                    <div class="mt-2">
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                            data-bs-target="#rulesModal">
+                            Rules
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="rulesModal" tabindex="-1" aria-labelledby="rulesModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="rulesModalLabel">Instuction</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Please Choose one of the Options. <br>
+
+                                        <img src="./img/rockComputer.png" height="50px" width="50px">Wins to<img
+                                            src="./img/scissorsPlayer.png" height="40px" width="50px"> <br>
+                                        <img src="./img/scissorsComputer.png" height="40px" width="50px"> Wins to<img
+                                            src="./img/paperPlayer.png" height="65px" width="65px"> <br>
+
+                                        <img src="./img/paperComputer.png" height="65px" width="65px"> Wins to<img
+                                            src="./img/rockPlayer.png" height="50px" width="50px"> <br>
+
+
+                                        First reach 10 points WINS!
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+            </div>
+            <div class="points">
+                <h6 class="text-light">Computer<span class="computerPoints">0</span> / <span
+                        class="playerPoints">0</span> Player</h6>
+            </div>
+            <div class="images">
+                <div class="computer">
+                    <img src="./img/rockComputer.png" alt="stone2">
+                </div>
+                <div class="player">
+                    <img src="./img/rockPlayer.png" alt="stone1">
+                </div>
+            </div>
+            <h2 class="h2">Choose An Option</h2>
+            <center>
+                <div class="options">
+                    <div><button id="rock">ROCK</button></div>
+                    <div><button id="paper">PAPER</button></div>
+                    <div><button id="scissors">SCISSORS</button></div>
+                </div>
+            </center>
+        </div>
+    </div>
+    <div class="text-center">
+        <div class="result">
+            <h3>BATTLE HISTORY</h3>
+        </div>
+    </div>
+
+    <div>
+        <footer class="container-fluid">
+            <div class="footer-wrap">
+                <div class="container first_class">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <h3>BE THE FIRST TO KNOW</h3>
+                            <p>Get all the latest information on WD83P.</p>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <form class="newsletter">
+                                <input type="text" placeholder="Email Address">
+                            </form>
+
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="col-md-12">
+                                <div class="standard_social_links">
+                                    <div>
+                                        <li class="round-btn btn-facebook"><a href="https://www.facebook.com/"><i
+                                                    class="fab fa-facebook-f"></i></a>
+
+                                        </li>
+
+                                        <li class="round-btn btn-twitter"><a href="https://twitter.com/"><i
+                                                    class="fab fa-twitter" aria-hidden="true"></i></a>
+
+                                        </li>
+                                        <li class="round-btn btn-instagram"><a href="https://www.instagram.com/"><i
+                                                    class="fab fa-instagram" aria-hidden="true"></i></a>
+
+                                        </li>
+                                        <li class="round-btn btn-envelop"><a href="https://mail.google.com/"><i
+                                                    class="fa fa-envelope" aria-hidden="true"></i></a>
+
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-md-12">
+                                <h3 style="text-align: center;">Stay Connected</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="second_class">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-6">
+                                <div class="footer-logo"><img src="./img/profile.jpg" height="70px" width="70px"
+                                        alt="logo">
+                                </div>
+                                <p>Calcutator / Unit Inverter</p>
+                            </div>
+                            <div class="col-md-2 col-sm-6">
+                                <ul class="footer-links">
+                                    <li><a href="index.html">Converter</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+
+                                <ul class="footer-category">
+                                    <li><a href="./calculator/index.html">Calcutator</a>
+                                    </li>
+                                </ul>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <h3>Contact and Email</h3>
+                                <ul class="footer-links">
+                                    <li class="text-light">872-223-6789 | 872-345-6784
+                                    </li>
+                                    <li class="text-light">Email : abcdjkl@hotmail.com
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="copyright">
+            Copyright 2023 | All Rights Reserved by WD83P kodego.
+        </div>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/fddf5c0916.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
